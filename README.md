@@ -17,25 +17,39 @@ The main curriculum file is structured in YAML format to ensure compatibility wi
 
 ```
 📁 cv_ricardo_silva
- ├── CV.yaml              # Main CV file
+ ├── cv/                 # Folder containing all YAML CV files
  ├── README.md            # This file
+ ├── mkdocs.yml           # MkDocs configuration file
+ ├── Makefile             # Automation commands for rendering and serving
  └── assets/              # Additional resources (if necessary)
 ```
 
 ## 🛠️ How to Use
 
-To view or edit the CV, open the `CV.yaml` file and modify the fields as needed. If you want to render the CV using **RenderCV**, follow these steps:
+This repository provides a **Makefile** to simplify working with RenderCV and MkDocs.
 
-1. Install **RenderCV** by following the instructions at [RenderCV](https://rendercv.com).
-2. Use the command:
-   ```bash
-   rendercv render CV.yaml -o CV.pdf
-   ```
-3. The `CV.pdf` file will be generated with the desired formatting.
+### 🔹 Rendering the CV(s)
+To render all CV files inside the `cv/` directory:
+```bash
+make render
+```
+This will process all `.yaml` files inside `cv/` and generate output files with the same name (without extensions).
+
+To render a specific CV file:
+```bash
+make render CV_FILE=cv/your-cv-file.yaml
+```
+
+### 🔹 Running MkDocs Locally
+To start a local development server for MkDocs:
+```bash
+make serve
+```
+This will allow you to preview the documentation locally.
 
 ## 🌍 Location & Language
 
-The CV is configured to be displayed in **Portuguese** (`locale: pt`). If you need to change it to another language, edit the `locale` field in the `CV.yaml` file.
+The CV is configured to be displayed in **Portuguese** (`locale: pt`). If you need to change it to another language, edit the `locale` field in the corresponding YAML file.
 
 ## 📫 Contact
 

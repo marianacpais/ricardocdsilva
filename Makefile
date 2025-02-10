@@ -1,10 +1,12 @@
-CV_FILE?=Cv Ricardo Silva.yaml
-OUTPUT_PDF=$(CV_FILE:.yaml=)
+CV_FILES=$(wildcard cv/*.yaml)
+OUTPUTS=$(CV_FILES:.yaml=)
 
 .PHONY: render
 render:
-	@echo "Rendering CV from $(CV_FILE)..."
-	rendercv render "$(CV_FILE)" -o "$(OUTPUT_PDF)"
+	@echo "Rendering all CVs in cv/ folder..."
+	@for file in $(CV_FILES); do \
+		rendercv render "$$file" -o "$${file%.yaml}"; \
+	done
 
 .PHONY: serve
 serve:
