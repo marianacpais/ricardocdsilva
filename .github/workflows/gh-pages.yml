@@ -48,6 +48,9 @@ jobs:
           path: site
           retention-days: 1
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v3
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v2
         with:

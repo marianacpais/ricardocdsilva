@@ -47,3 +47,8 @@ update-mkdocs:
 	@echo "theme:\n  name: 'material'\n  language: 'pt'" >> mkdocs.yml
 	@echo "plugins:\n  - search" >> mkdocs.yml
 	@echo "Updated mkdocs.yml"
+
+minor-commit:
+	git add .
+	git commit -m "Minor commit"
+	git push
