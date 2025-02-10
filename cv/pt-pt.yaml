@@ -9,6 +9,11 @@ cv:
       username: ricardocarreiradasilva
   sections:
     experiência_profissional:
+      - company: BTL
+        position: Eng Mecanico
+        start_date: 2023-02
+        location: Portugal
+        summary:
       - company: Instituto Nacional de Estatística (INE)
         position: Recenseador - Censos 2021
         start_date: 2021-04
