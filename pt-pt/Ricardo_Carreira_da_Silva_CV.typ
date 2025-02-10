@@ -518,7 +518,7 @@ Out 2008 a Jun 2016
 
 
 
-== Skills
+== Aptidões E Competências Pessoais
 
 
 #one-col-entry(
@@ -534,7 +534,7 @@ Out 2008 a Jun 2016
 )
 
 
-== Certifications
+== Certificados
 
 
 #two-col-entry(
@@ -568,7 +568,7 @@ Out 2008 a Jun 2016
 
 
 
-== Extracurricular Activities
+== Atividades Extra-curriculares
 
 
 #one-col-entry(
@@ -584,7 +584,7 @@ Out 2008 a Jun 2016
 )
 
 
-== Interests
+== Interesses
 
 
 #one-col-entry(
@@ -596,7 +596,7 @@ Out 2008 a Jun 2016
 )
 
 
-== Driving License
+== Cartas De Condução
 
 
 #one-col-entry(

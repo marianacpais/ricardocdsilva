@@ -38,12 +38,12 @@
 - Dissertação: "Otimização do Processamento por Fricção Linear (FSP) na Liga AA5083"
 - Média final de 12 valores
 
-# Skills
+# Aptidões E Competências Pessoais
 
 - Competências Digitais: CATIA V5, Autodesk Inventor, SolidWorks, Ultimaker Cura, Simplify3D, Microsoft Office, Visual Basic, ADINA, SIMUL8
 - Línguas: Português (nativo), Inglês (B2), Espanhol (A2)
 - Competências Sociais: Trabalho em equipa, liderança, flexibilidade, empreendedorismo, capacidade de iniciativa
-# Certifications
+# Certificados
 
 ## Curso de Aplicador de Produtos Fitofarmacêuticos
 
@@ -53,17 +53,17 @@
 
 - Out 2019 a Dez 2019
 
-# Extracurricular Activities
+# Atividades Extra-curriculares
 
 - Participação na "BEST Coimbra Engineering Weeks 2013"
 - Participação no Ciclo de Conferências promovido pelo NEEMAC
 - Colaboração sazonal no ramo agrícola - "Colina dos Monges" (2008-2015)
-# Interests
+# Interesses
 
 Impressão 3D
 
 Gravação e Corte a Laser
 
-# Driving License
+# Cartas De Condução
 
 - Carta de Condução: Categorias B, B1, Tratores categoria III
