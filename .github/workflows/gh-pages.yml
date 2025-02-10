@@ -38,6 +38,13 @@ jobs:
       - name: Update MkDocs configuration
         run: make update-mkdocs
 
-      - name: Build and deploy MkDocs site
-        run: |
-          mkdocs gh-deploy --force
+      - name: Build MkDocs site
+        run: mkdocs build
+
+      - name: Upload artifact for GitHub Pages
+        uses: actions/upload-pages-artifact@v1
+        with:
+          path: site
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v1
