@@ -1,47 +1,47 @@
 # Ricardo Carreira da Silva - CV
 
-Bem-vindo ao repositório do currículo de **Ricardo Carreira da Silva**. Este repositório contém os detalhes profissionais, acadêmicos e competências de Ricardo, formatados em YAML para uso com **RenderCV**.
+Welcome to the repository of **Ricardo Carreira da Silva's** curriculum vitae. This repository contains Ricardo's professional, academic, and skills details, formatted in YAML for use with **RenderCV**.
 
-## 📄 Sobre o CV
+## 📄 About the CV
 
-O arquivo principal do currículo está estruturado em formato YAML para garantir compatibilidade com RenderCV. Ele contém as seguintes seções:
-- **Educação** 🎓
-- **Experiência Profissional** 💼
-- **Competências** 🛠️
-- **Certificações** 📜
-- **Atividades Extracurriculares** 🎯
-- **Interesses** 🔍
-- **Carta de Condução** 🚗
+The main curriculum file is structured in YAML format to ensure compatibility with RenderCV. It includes the following sections:
+- **Education** 🎓
+- **Professional Experience** 💼
+- **Skills** 🛠️
+- **Certifications** 📜
+- **Extracurricular Activities** 🎯
+- **Interests** 🔍
+- **Driving License** 🚗
 
-## 📂 Estrutura do Repositório
+## 📂 Repository Structure
 
 ```
 📁 cv_ricardo_silva
- ├── CV.yaml              # Arquivo principal do currículo
- ├── README.md            # Este arquivo
- └── assets/              # Recursos adicionais (se necessário)
+ ├── CV.yaml              # Main CV file
+ ├── README.md            # This file
+ └── assets/              # Additional resources (if necessary)
 ```
 
-## 🛠️ Como Usar
+## 🛠️ How to Use
 
-Para visualizar ou editar o currículo, abra o arquivo `CV.yaml` e modifique os campos conforme necessário. Se desejar renderizar o currículo com **RenderCV**, siga os passos abaixo:
+To view or edit the CV, open the `CV.yaml` file and modify the fields as needed. If you want to render the CV using **RenderCV**, follow these steps:
 
-1. Instale o **RenderCV** seguindo as instruções em [RenderCV](https://rendercv.com).
-2. Utilize o comando:
+1. Install **RenderCV** by following the instructions at [RenderCV](https://rendercv.com).
+2. Use the command:
    ```bash
    rendercv render CV.yaml -o CV.pdf
    ```
-3. O arquivo `CV.pdf` será gerado com a formatação desejada.
+3. The `CV.pdf` file will be generated with the desired formatting.
 
-## 🌍 Localização e Idioma
+## 🌍 Location & Language
 
-O CV está configurado para ser exibido em **português** (`locale: pt`). Caso seja necessário mudar para outro idioma, edite o campo `locale` dentro do arquivo `CV.yaml`.
+The CV is configured to be displayed in **Portuguese** (`locale: pt`). If you need to change it to another language, edit the `locale` field in the `CV.yaml` file.
 
-## 📫 Contato
+## 📫 Contact
 
-Caso precise de mais informações ou queira sugerir melhorias, entre em contato via:
+For more information or suggestions for improvements, please contact:
 - 📧 Email: [ricardo.carreira.silva@gmail.com](mailto:ricardo.carreira.silva@gmail.com)
 - 🔗 LinkedIn: [Ricardo Carreira da Silva](https://www.linkedin.com/in/ricardocarreira-dasilva)
 
 ---
-📌 _Este repositório foi criado para armazenar e organizar o currículo de Ricardo Carreira da Silva de forma prática e reutilizável._
+📌 _This repository was created to store and organize Ricardo Carreira da Silva's CV in a practical and reusable way._
