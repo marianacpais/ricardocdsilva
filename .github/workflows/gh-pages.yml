@@ -1,0 +1,43 @@
+name: Deploy CV to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies
+        run: |
+          pip install rendercv mkdocs mkdocs-material
+          sudo apt-get update && sudo apt-get install -y make
+
+      - name: Render CVs
+        run: make render
+
+      - name: Copy Markdown files
+        run: make copy-md
+
+      - name: Update MkDocs configuration
+        run: make update-mkdocs
+
+      - name: Build and deploy MkDocs site
+        run: |
+          mkdocs gh-deploy --force
