@@ -1,37 +1,47 @@
-## Welcome to GitHub Pages
+# Ricardo Carreira da Silva - CV
 
-You can use the [editor on GitHub](https://github.com/marianacpais/ricardocdsilva/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Bem-vindo ao repositório do currículo de **Ricardo Carreira da Silva**. Este repositório contém os detalhes profissionais, acadêmicos e competências de Ricardo, formatados em YAML para uso com **RenderCV**.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## 📄 Sobre o CV
 
-### Markdown
+O arquivo principal do currículo está estruturado em formato YAML para garantir compatibilidade com RenderCV. Ele contém as seguintes seções:
+- **Educação** 🎓
+- **Experiência Profissional** 💼
+- **Competências** 🛠️
+- **Certificações** 📜
+- **Atividades Extracurriculares** 🎯
+- **Interesses** 🔍
+- **Carta de Condução** 🚗
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## 📂 Estrutura do Repositório
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+```
+📁 cv_ricardo_silva
+ ├── CV.yaml              # Arquivo principal do currículo
+ ├── README.md            # Este arquivo
+ └── assets/              # Recursos adicionais (se necessário)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## 🛠️ Como Usar
 
-### Jekyll Themes
+Para visualizar ou editar o currículo, abra o arquivo `CV.yaml` e modifique os campos conforme necessário. Se desejar renderizar o currículo com **RenderCV**, siga os passos abaixo:
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/marianacpais/ricardocdsilva/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+1. Instale o **RenderCV** seguindo as instruções em [RenderCV](https://rendercv.com).
+2. Utilize o comando:
+   ```bash
+   rendercv render CV.yaml -o CV.pdf
+   ```
+3. O arquivo `CV.pdf` será gerado com a formatação desejada.
 
-### Support or Contact
+## 🌍 Localização e Idioma
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+O CV está configurado para ser exibido em **português** (`locale: pt`). Caso seja necessário mudar para outro idioma, edite o campo `locale` dentro do arquivo `CV.yaml`.
+
+## 📫 Contato
+
+Caso precise de mais informações ou queira sugerir melhorias, entre em contato via:
+- 📧 Email: [ricardo.carreira.silva@gmail.com](mailto:ricardo.carreira.silva@gmail.com)
+- 🔗 LinkedIn: [Ricardo Carreira da Silva](https://www.linkedin.com/in/ricardocarreira-dasilva)
+
+---
+📌 _Este repositório foi criado para armazenar e organizar o currículo de Ricardo Carreira da Silva de forma prática e reutilizável._

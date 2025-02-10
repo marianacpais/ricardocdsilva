@@ -6,20 +6,9 @@ cv:
   website:
   social_networks:
     - network: LinkedIn
-      username: ricardocarreira-dasilva
+      username: ricardocarreiradasilva
   sections:
-    education:
-      - institution: Faculdade de Ciências e Tecnologia da Universidade de Coimbra (FCTUC)
-        area: Engenharia Mecânica
-        degree: Mestrado Integrado
-        start_date: 2008-10
-        end_date: 2016-06
-        location: Coimbra, Portugal
-        summary: Ramo de Produção e Projeto
-        highlights:
-          - 'Dissertação: "Otimização do Processamento por Fricção Linear (FSP) na Liga AA5083"'
-          - Média final de 12 valores
-    experience:
+    experiência_profissional:
       - company: Instituto Nacional de Estatística (INE)
         position: Recenseador - Censos 2021
         start_date: 2021-04
@@ -45,7 +34,18 @@ cv:
           - Seleção de materiais para construção de protótipos
           - Planeamento e orçamentação de equipamentos para Certificação "Gases Fluorados"
           - Desenvolvimento de esquemas de princípio para casas de máquinas de piscinas
-    skills:
+    formação_académica:
+      - institution: Faculdade de Ciências e Tecnologia da Universidade de Coimbra (FCTUC)
+        area: Engenharia Mecânica
+        degree: Mestrado Integrado
+        start_date: 2008-10
+        end_date: 2016-06
+        location: Coimbra, Portugal
+        summary: Ramo de Produção e Projeto
+        highlights:
+          - 'Dissertação: "Otimização do Processamento por Fricção Linear (FSP) na Liga AA5083"'
+          - Média final de 12 valores
+    aptidões_e_competências_pessoais:
       - label: Competências Digitais
         details: CATIA V5, Autodesk Inventor, SolidWorks, Ultimaker Cura, Simplify3D, Microsoft Office, Visual Basic, ADINA, SIMUL8
       - label: Línguas
@@ -68,3 +68,42 @@ cv:
     driving_license:
       - label: Carta de Condução
         details: Categorias B, B1, Tratores categoria III
+
+locale:
+  language: pt
+  phone_number_format: international
+  page_numbering_template: NOME - Página PAGE_NUMBER de TOTAL_PAGES
+  last_updated_date_template: Última atualização em TODAY
+  date_template: MONTH_ABBREVIATION YEAR
+  month: mês
+  months: meses
+  year: ano
+  years: anos
+  present: presente
+  to: a
+  abbreviations_for_months:
+    - Jan
+    - Fev
+    - Mar
+    - Abr
+    - Mai
+    - Jun
+    - Jul
+    - Ago
+    - Set
+    - Out
+    - Nov
+    - Dez
+  full_names_of_months:
+    - Janeiro
+    - Fevereiro
+    - Março
+    - Abril
+    - Maio
+    - Junho
+    - Julho
+    - Agosto
+    - Setembro
+    - Outubro
+    - Novembro
+    - Dezembro

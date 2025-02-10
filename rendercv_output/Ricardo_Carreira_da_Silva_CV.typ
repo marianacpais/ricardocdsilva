@@ -2,9 +2,9 @@
 #import "@preview/fontawesome:0.5.0": fa-icon
 
 #let name = "Ricardo Carreira da Silva"
-#let locale-catalog-page-numbering-style = context { "Ricardo Carreira da Silva - Page " + str(here().page()) + " of " + str(counter(page).final().first()) + "" }
-#let locale-catalog-last-updated-date-style = "Last updated in Feb 2025"
-#let locale-catalog-language = "en"
+#let locale-catalog-page-numbering-style = context { "NOME - Página " + str(here().page()) + " de " + str(counter(page).final().first()) + "" }
+#let locale-catalog-last-updated-date-style = "Última atualização em Fev 2025"
+#let locale-catalog-language = "pt"
 #let design-page-size = "us-letter"
 #let design-section-titles-font-size = 1.4em
 #let design-colors-text = rgb(0, 0, 0)
@@ -453,14 +453,48 @@
 #let connections-list = (
   [#fa-icon("location-dot", size: 0.9em) #h(0.05cm)Oliveira de Azeméis, Portugal],
   [#box(original-link("mailto:ricardo.carreira.silva@gmail.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)ricardo.carreira.silva\@gmail.com])],
-  [#box(original-link("tel:+351-917-701-638")[#fa-icon("phone", size: 0.9em) #h(0.05cm)917 701 638])],
-  [#box(original-link("https://linkedin.com/in/ricardocarreira-dasilva")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)ricardocarreira-dasilva])],
+  [#box(original-link("tel:+351-917-701-638")[#fa-icon("phone", size: 0.9em) #h(0.05cm)+351 917 701 638])],
+  [#box(original-link("https://linkedin.com/in/ricardocarreiradasilva")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)ricardocarreiradasilva])],
 )
 #connections(connections-list)
 
 
 
-== Education
+== Experiência Profissional
+
+
+#two-col-entry(
+  left-content: [
+    #strong[Instituto Nacional de Estatística \(INE\)], Recenseador - Censos 2021
+    #v(-design-text-leading)
+
+    #v(design-highlights-top-margin);#highlights([Planificação do trabalho com o Coordenador de Freguesia e Delegado Municipal],[Controlo da exaustividade de edifícios, alojamentos e subsecções],[Distribuição de cartas código e associação aos alojamentos],[Apoio à população na resposta aos inquéritos],[Assegurar a recolha de dados na área atribuída],)
+  ],
+  right-content: [
+    Portugal
+
+Abr 2021 a Jun 2021
+  ],
+)
+
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #strong[MCM - Moreira, Cruz e Magalhães, Lda.], Engenheiro Estagiário Industrial e de Produção
+    #v(-design-text-leading)
+
+    #v(design-highlights-top-margin);#highlights([Criação de protótipos com Autocad e CATIA V5],[Dimensionamento estrutural e análise de problemas],[Elaboração do BOM \(Bill of Materials\)],[Seleção de materiais para construção de protótipos],[Planeamento e orçamentação de equipamentos para Certificação \"Gases Fluorados\"],[Desenvolvimento de esquemas de princípio para casas de máquinas de piscinas],)
+  ],
+  right-content: [
+    Vila do Conde, Portugal
+
+Jan 2018 a Nov 2018
+  ],
+)
+
+
+
+== Formação Académica
 
 
 // YES DATE, YES DEGREE
@@ -478,41 +512,7 @@
   right-content: [
     Coimbra, Portugal
 
-Oct 2008 – June 2016
-  ],
-)
-
-
-
-== Experience
-
-
-#two-col-entry(
-  left-content: [
-    #strong[Instituto Nacional de Estatística \(INE\)], Recenseador - Censos 2021
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Planificação do trabalho com o Coordenador de Freguesia e Delegado Municipal],[Controlo da exaustividade de edifícios, alojamentos e subsecções],[Distribuição de cartas código e associação aos alojamentos],[Apoio à população na resposta aos inquéritos],[Assegurar a recolha de dados na área atribuída],)
-  ],
-  right-content: [
-    Portugal
-
-Apr 2021 – June 2021
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[MCM - Moreira, Cruz e Magalhães, Lda.], Engenheiro Estagiário Industrial e de Produção
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Criação de protótipos com Autocad e CATIA V5],[Dimensionamento estrutural e análise de problemas],[Elaboração do BOM \(Bill of Materials\)],[Seleção de materiais para construção de protótipos],[Planeamento e orçamentação de equipamentos para Certificação \"Gases Fluorados\"],[Desenvolvimento de esquemas de princípio para casas de máquinas de piscinas],)
-  ],
-  right-content: [
-    Vila do Conde, Portugal
-
-Jan 2018 – Nov 2018
+Out 2008 a Jun 2016
   ],
 )
 
@@ -542,7 +542,7 @@ Jan 2018 – Nov 2018
     #strong[Curso de Aplicador de Produtos Fitofarmacêuticos]
   ],
   right-content: [
-    Sept 2015
+    Set 2015
   ],
 )
 #one-col-entry(
@@ -557,7 +557,7 @@ Jan 2018 – Nov 2018
     #strong[Curso de Formação de Técnico de Contabilidade - IEFP]
   ],
   right-content: [
-    Oct 2019 – Dec 2019
+    Out 2019 a Dez 2019
   ],
 )
 #one-col-entry(
