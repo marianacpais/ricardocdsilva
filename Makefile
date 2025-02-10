@@ -17,7 +17,7 @@ copy-md:
 	@mkdir -p docs
 	@for file in $(MD_FILES); do \
 		dir_name=$$(basename $$(dirname "$$file")); \
-		if [ "$$dir_name" = "$(INDEX_LANG)" ]; then \
+		if [ "$$dir_name" = "$(INDEX_FILE)" ]; then \
 			dest="docs/index.md"; \
 		else \
 			dest="docs/$$dir_name.md"; \
@@ -30,3 +30,20 @@ copy-md:
 serve:
 	@echo "Starting MkDocs server..."
 	mkdocs serve
+
+
+.PHONY: update-mkdocs
+update-mkdocs:
+	@echo "Updating mkdocs.yml with available markdown files..."
+	@echo "site_name: '[CV] Ricardo Carreira da Silva'" > mkdocs.yml
+	@echo "nav:" >> mkdocs.yml
+	@echo '  - $(INDEX_FILE): index.md' >> mkdocs.yml
+	@for file in $(wildcard docs/*.md); do \
+		name=$$(basename $$file .md); \
+		if [ "$$name" != "index" ]; then \
+			echo "  - $$name: $$name.md" >> mkdocs.yml; \
+		fi; \
+	done
+	@echo "theme:\n  name: 'material'\n  language: 'pt'" >> mkdocs.yml
+	@echo "plugins:\n  - search" >> mkdocs.yml
+	@echo "Updated mkdocs.yml"
