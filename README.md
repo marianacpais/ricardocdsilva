@@ -21,6 +21,7 @@ The main curriculum file is structured in YAML format to ensure compatibility wi
  ├── README.md            # This file
  ├── mkdocs.yml           # MkDocs configuration file
  ├── Makefile             # Automation commands for rendering and serving
+ ├── docs/                # Folder where processed Markdown files are stored
  └── assets/              # Additional resources (if necessary)
 ```
 
@@ -38,6 +39,16 @@ This will process all `.yaml` files inside `cv/` and generate output files with 
 To render a specific CV file:
 ```bash
 make render CV_FILE=cv/your-cv-file.yaml
+```
+
+### 🔹 Copying Markdown Files
+Each CV has associated Markdown files inside a folder matching its name within `cv/`. To copy all `.md` files from these folders into the `docs/` directory:
+```bash
+make copy-md
+```
+This will rename and move files like:
+```
+cv/pt-pt/Ricardo_Carreira_da_Silva_CV.md → docs/pt-pt.md
 ```
 
 ### 🔹 Running MkDocs Locally
