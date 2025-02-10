@@ -451,26 +451,13 @@
 
 // Print connections:
 #let connections-list = (
-  [#fa-icon("location-dot", size: 0.9em) #h(0.05cm)Location],
-  [#box(original-link("mailto:john.doe@example.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)john.doe\@example.com])],
-  [#box(original-link("tel:+1-609-999-9995")[#fa-icon("phone", size: 0.9em) #h(0.05cm)\(609\) 999-9995])],
-  [#box(original-link("https://linkedin.com/in/john.doe")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)john.doe])],
-  [#box(original-link("https://github.com/john.doe")[#fa-icon("github", size: 0.9em) #h(0.05cm)john.doe])],
+  [#fa-icon("location-dot", size: 0.9em) #h(0.05cm)Oliveira de Azeméis, Portugal],
+  [#box(original-link("mailto:ricardo.carreira.silva@gmail.com")[#fa-icon("envelope", size: 0.9em) #h(0.05cm)ricardo.carreira.silva\@gmail.com])],
+  [#box(original-link("tel:+351-917-701-638")[#fa-icon("phone", size: 0.9em) #h(0.05cm)917 701 638])],
+  [#box(original-link("https://linkedin.com/in/ricardocarreira-dasilva")[#fa-icon("linkedin", size: 0.9em) #h(0.05cm)ricardocarreira-dasilva])],
 )
 #connections(connections-list)
 
-
-
-== Welcome to RenderCV!
-
-
-#one-col-entry(
-  content: [#link("https://rendercv.com")[RenderCV] is a Typst-based CV framework designed for academics and engineers, with Markdown syntax support.]
-)
-#v(design-entries-vertical-space-between-entries)
-#one-col-entry(
-  content: [Each section title is arbitrary. Each section contains a list of entries, and there are 7 different entry types to choose from.]
-)
 
 
 == Education
@@ -479,35 +466,19 @@
 // YES DATE, YES DEGREE
 #three-col-entry(
   left-column-width: 1cm,
-  left-content: [#strong[PhD]],
+  left-content: [#strong[Mestrado Integrado]],
   middle-content: [
-    #strong[Stanford University], Computer Science
+    #strong[Faculdade de Ciências e Tecnologia da Universidade de Coimbra \(FCTUC\)], Engenharia Mecânica
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Working on the optimization of autonomous vehicles in urban environments],)
+    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [Ramo de Produção e Projeto])], column-gutter: 0cm)
+
+#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Dissertação: \"Otimização do Processamento por Fricção Linear \(FSP\) na Liga AA5083\"],[Média final de 12 valores],)
   ],
   right-content: [
-    Stanford, CA, USA
+    Coimbra, Portugal
 
-Sept 2023 – present
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-// YES DATE, YES DEGREE
-#three-col-entry(
-  left-column-width: 1cm,
-  left-content: [#strong[BS]],
-  middle-content: [
-    #strong[Boğaziçi University], Computer Engineering
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([GPA: 3.9\/4.0, ranked 1st out of 100 students],[Awards: Best Senior Project, High Honor],)
-  ],
-  right-content: [
-    Istanbul, Türkiye
-
-Sept 2018 – June 2022
+Oct 2008 – June 2016
   ],
 )
 
@@ -518,81 +489,30 @@ Sept 2018 – June 2022
 
 #two-col-entry(
   left-content: [
-    #strong[Company C], Summer Intern
+    #strong[Instituto Nacional de Estatística \(INE\)], Recenseador - Censos 2021
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Developed deep learning models for the detection of gravitational waves in LIGO data],[Published #link("https://example.com")[3 peer-reviewed research papers] about the project and results],)
+    #v(design-highlights-top-margin);#highlights([Planificação do trabalho com o Coordenador de Freguesia e Delegado Municipal],[Controlo da exaustividade de edifícios, alojamentos e subsecções],[Distribuição de cartas código e associação aos alojamentos],[Apoio à população na resposta aos inquéritos],[Assegurar a recolha de dados na área atribuída],)
   ],
   right-content: [
-    Livingston, LA, USA
+    Portugal
 
-June 2024 – Sept 2024
+Apr 2021 – June 2021
   ],
 )
 
 #v(design-entries-vertical-space-between-entries)
 #two-col-entry(
   left-content: [
-    #strong[Company B], Summer Intern
+    #strong[MCM - Moreira, Cruz e Magalhães, Lda.], Engenheiro Estagiário Industrial e de Produção
     #v(-design-text-leading)
 
-    #v(design-highlights-top-margin);#highlights([Optimized the production line by 15\% by implementing a new scheduling algorithm],)
+    #v(design-highlights-top-margin);#highlights([Criação de protótipos com Autocad e CATIA V5],[Dimensionamento estrutural e análise de problemas],[Elaboração do BOM \(Bill of Materials\)],[Seleção de materiais para construção de protótipos],[Planeamento e orçamentação de equipamentos para Certificação \"Gases Fluorados\"],[Desenvolvimento de esquemas de princípio para casas de máquinas de piscinas],)
   ],
   right-content: [
-    Ankara, Türkiye
+    Vila do Conde, Portugal
 
-June 2023 – Sept 2023
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #strong[Company A], Summer Intern
-    #v(-design-text-leading)
-
-    #v(design-highlights-top-margin);#highlights([Designed an inventory management web application for a warehouse],)
-  ],
-  right-content: [
-    Istanbul, Türkiye
-
-June 2022 – Sept 2022
-  ],
-)
-
-
-
-== Projects
-
-
-#two-col-entry(
-  left-content: [
-    #link("https://example.com")[#strong[Example Project]]
-  ],
-  right-content: [
-    May 2024 – present
-  ],
-)
-#one-col-entry(
-  content: [
-    #two-col(left-column-width: design-highlights-summary-left-margin, right-column-width: 1fr, left-content: [], right-content: [#v(design-highlights-top-margin);#align(left, [A web application for writing essays])], column-gutter: 0cm)
-
-#v(-design-text-leading)  #v(design-highlights-top-margin);#highlights([Launched an #link("https://example.com")[iOS app] in 09\/2024 that currently has 10k+ monthly active users],[The app is made open-source \(3,000+ stars #link("https://github.com")[on GitHub]\)],)
-  ],
-)
-
-#v(design-entries-vertical-space-between-entries)
-#two-col-entry(
-  left-content: [
-    #link("https://example.com")[#strong[Teaching on Udemy]]
-  ],
-  right-content: [
-    Fall 2023
-  ],
-)
-#one-col-entry(
-  content: [
-    #v(design-highlights-top-margin);#highlights([Instructed the \"Statics\" course on Udemy \(60,000+ students, 200,000+ hours watched\)],)
+Jan 2018 – Nov 2018
   ],
 )
 
@@ -602,34 +522,49 @@ June 2022 – Sept 2022
 
 
 #one-col-entry(
-  content: [#strong[Programming:] Proficient with Python, C++, and Git; good understanding of Web, app development, and DevOps]
+  content: [#strong[Competências Digitais:] CATIA V5, Autodesk Inventor, SolidWorks, Ultimaker Cura, Simplify3D, Microsoft Office, Visual Basic, ADINA, SIMUL8]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Mathematics:] Good understanding of differential equations, calculus, and linear algebra]
+  content: [#strong[Línguas:] Português \(nativo\), Inglês \(B2\), Espanhol \(A2\)]
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [#strong[Languages:] English \(fluent, TOEFL: 118\/120\), Turkish \(native\)]
+  content: [#strong[Competências Sociais:] Trabalho em equipa, liderança, flexibilidade, empreendedorismo, capacidade de iniciativa]
 )
 
 
-== Publications
+== Certifications
 
 
 #two-col-entry(
   left-content: [
-    #strong[3D Finite Element Analysis of No-Insulation Coils]
-
+    #strong[Curso de Aplicador de Produtos Fitofarmacêuticos]
   ],
   right-content: [
-    Jan 2004
+    Sept 2015
   ],
 )
-#one-col-entry(content:[
-#v(design-highlights-top-margin);Frodo Baggins, #strong[#emph[John Doe]], Samwise Gamgee
+#one-col-entry(
+  content: [
+    
+  ],
+)
 
-#v(design-highlights-top-margin - design-text-leading)#link("https://doi.org/10.1109/TASC.2023.3340648")[10.1109/TASC.2023.3340648]])
+#v(design-entries-vertical-space-between-entries)
+#two-col-entry(
+  left-content: [
+    #strong[Curso de Formação de Técnico de Contabilidade - IEFP]
+  ],
+  right-content: [
+    Oct 2019 – Dec 2019
+  ],
+)
+#one-col-entry(
+  content: [
+    
+  ],
+)
 
 
 
@@ -637,41 +572,35 @@ June 2022 – Sept 2022
 
 
 #one-col-entry(
-  content: [- There are 7 unique entry types in RenderCV: #emph[BulletEntry], #emph[TextEntry], #emph[EducationEntry], #emph[ExperienceEntry], #emph[NormalEntry], #emph[PublicationEntry], and #emph[OneLineEntry].],
+  content: [- Participação na \"BEST Coimbra Engineering Weeks 2013\"],
 )
 #v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [- Each entry type has a different structure and layout. This document demonstrates all of them.],
+  content: [- Participação no Ciclo de Conferências promovido pelo NEEMAC],
 )
-
-
-== Numbered Entries
+#v(design-entries-vertical-space-between-entries)
 #one-col-entry(
-  content: [
-
-
-+ This is a numbered entry.
-+ This is another numbered entry.
-+ This is the third numbered entry.
-
-  ],
+  content: [- Colaboração sazonal no ramo agrícola - \"Colina dos Monges\" \(2008-2015\)],
 )
 
-== Reversed Numbered Entries
+
+== Interests
+
+
 #one-col-entry(
-  content: [
-    #let rev-enum-items = (
-
-
-[This is a reversed numbered entry.],
-[This is another reversed numbered entry.],
-[This is the third reversed numbered entry.],
-
-  )
-  #enum(
-    numbering: n => [#{rev-enum-items.len() + 1 - n}.],
-    ..rev-enum-items,
-  )
-  ],
+  content: [Impressão 3D]
 )
+#v(design-entries-vertical-space-between-entries)
+#one-col-entry(
+  content: [Gravação e Corte a Laser]
+)
+
+
+== Driving License
+
+
+#one-col-entry(
+  content: [#strong[Carta de Condução:] Categorias B, B1, Tratores categoria III]
+)
+
 
