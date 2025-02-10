@@ -1,0 +1,9 @@
+site_name: 'Currículo de Ricardo Carreira da Silva'
+site_url: 'https://your-github-username.github.io/your-repo-name/'
+theme:
+  name: 'material'
+  language: 'pt'
+nav:
+  - Início: index.md
+plugins:
+  - search

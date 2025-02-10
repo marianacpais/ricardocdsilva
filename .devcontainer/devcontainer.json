@@ -6,7 +6,7 @@
       "version": "3.10"
     }
   },
-  "postCreateCommand": "pip install rendercv mkdocs",
+  "postCreateCommand": "pip install rendercv mkdocs mkdocs-material",
   "customizations": {
     "vscode": {
       "extensions": [

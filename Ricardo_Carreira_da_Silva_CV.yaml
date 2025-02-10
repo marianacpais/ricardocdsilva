@@ -52,20 +52,20 @@ cv:
         details: 'Português (nativo), Inglês (B2), Espanhol (A2)'
       - label: Competências Sociais
         details: Trabalho em equipa, liderança, flexibilidade, empreendedorismo, capacidade de iniciativa
-    certifications:
+    certificados:
       - name: Curso de Aplicador de Produtos Fitofarmacêuticos
         date: 2015-09
       - name: Curso de Formação de Técnico de Contabilidade - IEFP
         start_date: 2019-10
         end_date: 2019-12
-    extracurricular_activities:
+    atividades_extra-curriculares:
       - bullet: Participação na "BEST Coimbra Engineering Weeks 2013"
       - bullet: Participação no Ciclo de Conferências promovido pelo NEEMAC
       - bullet: Colaboração sazonal no ramo agrícola - "Colina dos Monges" (2008-2015)
-    interests:
+    interesses:
       - Impressão 3D
       - Gravação e Corte a Laser
-    driving_license:
+    cartas_de_condução:
       - label: Carta de Condução
         details: Categorias B, B1, Tratores categoria III
 
